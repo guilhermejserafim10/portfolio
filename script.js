@@ -7,3 +7,20 @@ linksMenu.forEach(link => {
     console.log(`Navegando para: ${this.textContent}`);
   });
 });
+
+const elementos = document.querySelectorAll('.animar');
+
+function animarScroll() {
+  const alturaTela = window.innerHeight;
+
+  elementos.forEach(el => {
+    const topo = el.getBoundingClientRect().top;
+
+    if (topo < alturaTela - 50) {
+      el.classList.add('ativo');
+    }
+  });
+}
+
+window.addEventListener('scroll', animarScroll);
+window.addEventListener('load', animarScroll);
