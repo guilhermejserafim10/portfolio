@@ -315,3 +315,14 @@ body {
     font-size: 1.7rem;
   }
 }
+
+.animar {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.animar.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
