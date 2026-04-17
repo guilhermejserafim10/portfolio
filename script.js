@@ -8,7 +8,7 @@ linksMenu.forEach(link => {
   });
 });
 
-const elementos = document.querySelectorAll('.animar');
+const elementos = document.querySelectorAll(".animar");
 
 function animarScroll() {
   const alturaTela = window.innerHeight;
@@ -16,11 +16,11 @@ function animarScroll() {
   elementos.forEach(el => {
     const topo = el.getBoundingClientRect().top;
 
-    if (topo < alturaTela - 50) {
-      el.classList.add('ativo');
+    if (topo < alturaTela - 80) {
+      el.classList.add("ativo");
     }
   });
 }
 
-window.addEventListener('scroll', animarScroll);
-window.addEventListener('load', animarScroll);
+window.addEventListener("scroll", animarScroll);
+window.addEventListener("load", animarScroll);
