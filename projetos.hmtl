@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+  <title>Projetos | Guilherme Serafim</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="hero animar">
+    <div class="container hero-content">
+
+      <div class="hero-texto animar">
+
+        <p class="tag">Portfólio Acadêmico e Profissional</p>
+
+        <h1>Projetos</h1>
+
+        <h2>Projetos acadêmicos e práticos desenvolvidos</h2>
+
+        <p class="descricao">
+          Nesta seção estão reunidos projetos voltados ao desenvolvimento web,
+          sustentabilidade, automação e criação de soluções tecnológicas,
+          demonstrando conhecimentos práticos adquiridos ao longo da graduação.
+        </p>
+
+      </div>
+
+      <div class="hero-foto animar">
+        <img src="imagens/foto.jpg" alt="Foto de Guilherme Serafim">
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MENU -->
+  <nav class="menu">
+    <div class="container">
+
+      <a href="index.html">Início</a>
+
+      <a href="projetos.html">Projetos</a>
+
+      <a href="certificados.html">Certificados</a>
+
+      <a href="relatorios.html">Relatórios</a>
+
+      <a href="contato.html">Contato</a>
+
+    </div>
+  </nav>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="secao animar">
+    <div class="container">
+
+      <h2 class="animar">Projetos</h2>
+
+      <div class="grid-projetos">
+
+        <!-- AQUAVOLT -->
+        <div class="card-projeto animar">
+
+          <img src="imagens/aquavolt.png"
+               alt="Imagem do projeto Aquavolt"
+               class="img-projeto">
+
+          <h3>Aquavolt</h3>
+
+          <p>
+            <strong>Problema:</strong>
+            Alto consumo de água potável e energia elétrica em edificações,
+            aliado à necessidade de soluções mais sustentáveis para reaproveitamento de recursos.
+          </p>
+
+          <p>
+            <strong>Solução:</strong>
+            Desenvolvimento de um sistema de captação de água da chuva e reuso hídrico
+            do próprio prédio, integrado à filtragem e à geração de energia
+            por microturbinas hidráulicas.
+          </p>
+
+          <p>
+            <strong>Tecnologias:</strong>
+            HTML, CSS, Arduino, sensores e automação.
+          </p>
+
+          <p>
+            <strong>Resultado:</strong>
+            Projeto acadêmico voltado à redução do consumo de água tratada
+            e ao aumento da eficiência energética, unindo sustentabilidade,
+            tecnologia e reaproveitamento de recursos.
+          </p>
+
+          <div class="links-projeto">
+
+            <a href="projetos/UPX Aquavolt/UPX Aquavolt 1.0.pdf"
+               target="_blank">
+              📄 Relatório 1.0
+            </a>
+
+            <a href="projetos/UPX Aquavolt/Relatorio_Final_Aquavolt_2.0_Predial.pdf"
+               target="_blank">
+              📄 Relatório 2.0
+            </a>
+
+            <a href="projetos/UPX Aquavolt/videoprojeto.mp4"
+               target="_blank">
+              🎬 Vídeo
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- BEVSHOP -->
+        <div class="card-projeto animar">
+
+          <img src="imagens/bev-shop.png"
+               alt="Imagem do projeto BevShop"
+               class="img-projeto">
+
+          <h3>BevShop</h3>
+
+          <p>
+            <strong>Problema:</strong>
+            Necessidade de um sistema de e-commerce funcional,
+            intuitivo e capaz de organizar o catálogo e a navegação
+            de produtos de forma eficiente.
+          </p>
+
+          <p>
+            <strong>Solução:</strong>
+            Desenvolvimento de uma aplicação web com integração entre
+            front-end e banco de dados, simulando o funcionamento
+            de uma loja virtual com estrutura preparada para expansão.
+          </p>
+
+          <p>
+            <strong>Tecnologias:</strong>
+            HTML, CSS, JavaScript e Banco de Dados.
+          </p>
+
+          <p>
+            <strong>Resultado:</strong>
+            Sistema de e-commerce funcional, com base estruturada
+            para cadastro e gerenciamento de produtos, demonstrando
+            aplicação prática de interface, lógica e organização de dados.
+          </p>
+
+          <div class="links-projeto">
+
+            <a href="https://github.com/bruno-cO70/Desenvolvimento-Web-CP500TIN2"
+               target="_blank">
+              💻 GitHub
+            </a>
+
+            <a href="https://desenvolvimento-web-wine-nine.vercel.app/"
+               target="_blank">
+              🌐 Ver projeto
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- ECOWARE -->
+        <div class="card-projeto animar">
+
+          <img src="imagens/ecoware.png"
+               alt="Imagem do projeto Ecoware"
+               class="img-projeto">
+
+          <h3>Ecoware</h3>
+
+          <p>
+            <strong>Problema:</strong>
+            Elevado consumo de água pré-tratada em granjas e estufas,
+            além da necessidade de tornar esses ambientes mais sustentáveis e eficientes.
+          </p>
+
+          <p>
+            <strong>Solução:</strong>
+            Proposta de reaproveitamento da água da chuva por meio de telhado verde,
+            combinada com automação das operações da granja ou estufa utilizando
+            sensores e controladores.
+          </p>
+
+          <p>
+            <strong>Tecnologias:</strong>
+            HTML, CSS, Arduino, sensores e automação.
+          </p>
+
+          <p>
+            <strong>Resultado:</strong>
+            Projeto acadêmico voltado à redução do consumo de água tratada,
+            ao incentivo ao uso de energias limpas e à modernização de ambientes
+            rurais com foco em sustentabilidade.
+          </p>
+
+          <div class="links-projeto">
+
+            <a href="projetos/UPX Ecowere/Relatorio.pdf"
+               target="_blank">
+              📄 Relatório
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <div class="container">
+
+      <p>© 2026 - Portfólio de Guilherme Januário Serafim</p>
+
+      <p>Desenvolvido com HTML, CSS e JavaScript</p>
+
+      <p>Versão 1.8.0</p>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
