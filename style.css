@@ -1,3 +1,7 @@
+/* =========================
+   RESET
+========================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +24,11 @@ body {
   max-width: 1150px;
   margin: 0 auto;
 }
+
+
+/* =========================
+   HERO
+========================= */
 
 .hero {
   background: linear-gradient(135deg, #020617, #0f172a, #1e293b);
@@ -81,6 +90,11 @@ body {
   box-shadow: 0 0 25px rgba(59, 130, 246, 0.35);
 }
 
+
+/* =========================
+   BOTÕES DO HERO
+========================= */
+
 .botoes-topo {
   display: flex;
   flex-wrap: wrap;
@@ -102,6 +116,11 @@ body {
   transform: translateY(-2px);
 }
 
+
+/* =========================
+   MENU
+========================= */
+
 .menu {
   background-color: #111827;
   padding: 15px 0;
@@ -114,14 +133,8 @@ body {
 .menu .container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 22px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-
-.menu .container::-webkit-scrollbar {
-  display: none;
 }
 
 .menu a {
@@ -130,12 +143,16 @@ body {
   font-weight: bold;
   transition: 0.3s;
   white-space: nowrap;
-  flex: 0 0 auto;
 }
 
 .menu a:hover {
   color: #60a5fa;
 }
+
+
+/* =========================
+   SEÇÕES
+========================= */
 
 .secao {
   padding: 70px 20px;
@@ -159,6 +176,11 @@ body {
   color: #e5e7eb;
 }
 
+
+/* =========================
+   CARDS
+========================= */
+
 .card-unico,
 .card,
 .card-projeto,
@@ -166,7 +188,10 @@ body {
   background-color: #0f172a;
   border: 1px solid #334155;
   border-radius: 14px;
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card-unico:hover,
@@ -178,6 +203,11 @@ body {
   box-shadow: 0 10px 25px rgba(96, 165, 250, 0.2);
 }
 
+
+/* =========================
+   CARD ÚNICO
+========================= */
+
 .card-unico {
   padding: 25px;
   max-width: 700px;
@@ -188,6 +218,11 @@ body {
   color: #93c5fd;
   margin-bottom: 12px;
 }
+
+
+/* =========================
+   HABILIDADES
+========================= */
 
 .cards-habilidades {
   display: grid;
@@ -218,6 +253,11 @@ body {
   color: #e5e7eb;
 }
 
+
+/* =========================
+   PROJETOS E CERTIFICADOS
+========================= */
+
 .grid-projetos,
 .grid-certificados {
   display: grid;
@@ -234,7 +274,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-height: 100%;
 }
 
 .card-projeto h3 {
@@ -248,6 +287,11 @@ body {
   line-height: 1.8;
 }
 
+
+/* =========================
+   IMAGENS DOS PROJETOS
+========================= */
+
 .img-projeto {
   width: 100%;
   height: 220px;
@@ -256,13 +300,20 @@ body {
   margin-bottom: 18px;
   border: 1px solid #334155;
   display: block;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card-projeto:hover .img-projeto {
   transform: scale(1.02);
   box-shadow: 0 8px 20px rgba(96, 165, 250, 0.12);
 }
+
+
+/* =========================
+   LINKS DOS PROJETOS
+========================= */
 
 .links-projeto {
   display: flex;
@@ -285,6 +336,11 @@ body {
   text-decoration: underline;
 }
 
+
+/* =========================
+   CONTATO
+========================= */
+
 .contato-box {
   max-width: 800px;
   margin: 0 auto;
@@ -300,11 +356,17 @@ body {
 .contato-box a {
   color: #60a5fa;
   text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 .contato-box a:hover {
   text-decoration: underline;
 }
+
+
+/* =========================
+   RODAPÉ
+========================= */
 
 .rodape {
   background-color: #020617;
@@ -314,10 +376,17 @@ body {
   border-top: 1px solid #1f2937;
 }
 
+
+/* =========================
+   ANIMAÇÕES
+========================= */
+
 .animar {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
 }
 
 .animar.ativo {
@@ -331,6 +400,11 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+/* =========================
+   LINK VOLTAR
+========================= */
 
 .voltar-link {
   display: inline-block;
@@ -346,7 +420,13 @@ body {
   text-decoration: underline;
 }
 
+
+/* =========================================
+   RESPONSIVIDADE - TABLETS
+========================================= */
+
 @media (max-width: 900px) {
+
   .hero-content {
     flex-direction: column-reverse;
     text-align: center;
@@ -371,29 +451,107 @@ body {
   }
 }
 
-@media (max-width: 700px) {
-  .menu .container {
-    justify-content: flex-start;
-    gap: 16px;
-    padding-bottom: 2px;
-  }
-}
+
+/* =========================================
+   RESPONSIVIDADE - CELULARES
+========================================= */
 
 @media (max-width: 600px) {
+
+  /* HERO */
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero-content {
+    gap: 35px;
+  }
+
+  .hero-texto {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .hero-foto {
+    flex: none;
+    width: 100%;
+  }
+
   .hero-foto img {
     width: 210px;
     height: 210px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .descricao {
+    width: 100%;
+  }
+
+
+  /* BOTÕES */
+
+  .botoes-topo {
+    justify-content: center;
+  }
+
+
+  /* MENU MOBILE */
+
+  .menu {
+    padding: 12px 0;
+  }
+
+  .menu .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    align-items: center;
+    gap: 8px 16px;
+    padding: 0 10px;
+  }
+
+  .menu a {
+    font-size: 13px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+
+  /* SEÇÕES */
+
+  .secao {
+    padding: 60px 20px;
   }
 
   .secao h2 {
     font-size: 1.7rem;
   }
 
+
+  /* CARDS */
+
   .card,
   .card-projeto,
   .card-unico,
   .contato-box {
     padding: 18px;
+  }
+
+
+  /* PROJETOS */
+
+  .grid-projetos,
+  .grid-certificados {
+    grid-template-columns: 1fr;
   }
 
   .img-projeto {
@@ -406,5 +564,132 @@ body {
 
   .links-projeto a {
     font-size: 13px;
+  }
+}
+
+
+/* =========================================
+   RESPONSIVIDADE - CELULARES PEQUENOS
+========================================= */
+
+@media (max-width: 400px) {
+
+  .menu .container {
+    gap: 8px 12px;
+  }
+
+  .menu a {
+    font-size: 12px;
+  }
+
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero h2 {
+    font-size: 1.1rem;
+  }
+
+  .tag {
+    font-size: 0.8rem;
+  }
+
+  .secao h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+/* =========================
+   ESTATÍSTICAS DO GITHUB
+========================= */
+
+.github-estatisticas {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.github-card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 25px;
+
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 14px;
+
+  text-align: center;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.github-card:hover {
+  transform: translateY(-6px);
+  border-color: #60a5fa;
+  box-shadow: 0 10px 25px rgba(96, 165, 250, 0.2);
+}
+
+.github-card h3 {
+  margin: 0;
+  color: #93c5fd;
+  font-size: 1.2rem;
+}
+
+.github-card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* GRÁFICO DE ATIVIDADES */
+
+.github-card:last-child {
+  grid-column: 1 / -1;
+}
+
+.github-card:last-child img {
+  width: 100%;
+  max-width: 950px;
+}
+
+/* =========================
+   RESPONSIVIDADE - GITHUB
+========================= */
+
+@media (max-width: 768px) {
+
+  .github-estatisticas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .github-card {
+    padding: 20px;
+  }
+
+  .github-card:last-child {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .github-card {
+    padding: 15px;
+  }
+
+  .github-card h3 {
+    font-size: 1.1rem;
   }
 }
