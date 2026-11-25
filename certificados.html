@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -61,12 +62,49 @@
 
       <h2 class="animar">Certificados</h2>
 
+      <!-- FILTROS DOS CERTIFICADOS -->
+      <div class="filtros-certificados animar"
+           role="group"
+           aria-label="Filtrar certificados por categoria">
+
+        <button
+          type="button"
+          class="filtro-certificado ativo"
+          data-filtro="todos"
+          aria-pressed="true">
+          Todos (<span class="contador">3</span>)
+        </button>
+
+        <button
+          type="button"
+          class="filtro-certificado"
+          data-filtro="tecnologia"
+          aria-pressed="false">
+          Tecnologia (<span class="contador">2</span>)
+        </button>
+
+        <button
+          type="button"
+          class="filtro-certificado"
+          data-filtro="financas"
+          aria-pressed="false">
+          Finanças (<span class="contador">1</span>)
+        </button>
+
+      </div>
+
+      <!-- GRID DE CERTIFICADOS -->
       <div class="grid-certificados">
 
-        <!-- LÓGICA -->
-        <div class="card animar">
+        <!-- LÓGICA DE PROGRAMAÇÃO -->
+        <div class="card card-certificado animar"
+             data-categoria="tecnologia">
 
           <h3>Lógica de Programação</h3>
+
+          <div class="categoria-certificado">
+            <span>Tecnologia</span>
+          </div>
 
           <p>
             Curso complementar voltado aos fundamentos da programação
@@ -75,18 +113,26 @@
           </p>
 
           <div class="links-projeto">
+
             <a href="certificados/Logica-De-programaçao.pdf"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
               📄 Abrir certificado
             </a>
+
           </div>
 
         </div>
 
         <!-- HP12C -->
-        <div class="card animar">
+        <div class="card card-certificado animar"
+             data-categoria="financas">
 
           <h3>HP12C</h3>
+
+          <div class="categoria-certificado">
+            <span>Finanças</span>
+          </div>
 
           <p>
             Curso complementar com foco em cálculos financeiros e utilização
@@ -94,18 +140,26 @@
           </p>
 
           <div class="links-projeto">
+
             <a href="certificados/HP 12C.pdf"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
               📄 Abrir certificado
             </a>
+
           </div>
 
         </div>
 
         <!-- HTML5 E CSS3 -->
-        <div class="card animar">
+        <div class="card card-certificado animar"
+             data-categoria="tecnologia">
 
           <h3>HTML5 e CSS3</h3>
+
+          <div class="categoria-certificado">
+            <span>Tecnologia</span>
+          </div>
 
           <p>
             Certificado em desenvolvimento web front-end com HTML5 e CSS3,
@@ -114,10 +168,13 @@
           </p>
 
           <div class="links-projeto">
+
             <a href="certificados/html5-css3-1.pdf"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
               📄 Abrir certificado
             </a>
+
           </div>
 
         </div>
@@ -144,4 +201,3 @@
 
 </body>
 </html>
-

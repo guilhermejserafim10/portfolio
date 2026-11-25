@@ -770,3 +770,124 @@ body {
   outline-offset: 3px;
 }
 
+
+/* =========================
+   FILTROS DOS CERTIFICADOS
+========================= */
+
+.filtros-certificados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.filtro-certificado {
+  padding: 10px 20px;
+
+  background-color: #172554;
+  color: #bfdbfe;
+
+  border: 1px solid #3b82f6;
+  border-radius: 8px;
+
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.filtro-certificado:hover {
+  background-color: #1d4ed8;
+  border-color: #60a5fa;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.filtro-certificado.ativo {
+  background-color: #2563eb;
+  border-color: #60a5fa;
+  color: #ffffff;
+}
+
+.filtro-certificado:focus-visible {
+  outline: 2px solid #93c5fd;
+  outline-offset: 3px;
+}
+
+
+/* =========================
+   CARDS DOS CERTIFICADOS
+========================= */
+
+.card-certificado {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.card-certificado h3 {
+  margin-bottom: 12px;
+}
+
+.card-certificado p {
+  margin-bottom: 15px;
+}
+
+.card-certificado .links-projeto {
+  margin-top: auto;
+}
+
+.card-certificado[hidden] {
+  display: none;
+}
+
+
+/* =========================
+   CATEGORIAS DOS CERTIFICADOS
+========================= */
+
+.categoria-certificado {
+  margin-bottom: 15px;
+}
+
+.categoria-certificado span {
+  display: inline-block;
+  padding: 5px 10px;
+
+  background-color: #1e293b;
+  color: #93c5fd;
+
+  border: 1px solid #334155;
+  border-radius: 8px;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+
+/* =========================
+   FILTROS - RESPONSIVIDADE
+========================= */
+
+@media (max-width: 600px) {
+
+  .filtros-certificados {
+    gap: 8px;
+    margin-bottom: 25px;
+  }
+
+  .filtro-certificado {
+    padding: 9px 12px;
+    font-size: 0.8rem;
+  }
+}
+
